@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="pan.css">
+    </head> 
+    <body id="body">
+        <nav id="nav">
+            <h1 class="logo">GCN</h1>
+            <a class="a1" href="new.html">Home</a>
+            <a class="a1" href="studies.html">Studies</a>
+            <a class="a1" href="works.html">Works</a>
+            <a class="a1" href="about.html">AboutMe</a>
+            <a href="contact.html" class="bt1">ContactMe</a>
+        </nav>
+        <h2 class="title">PAN CARD TAMPERING DETECTION</h2><br/>
+        <h3 class="heading">ABSTRACT:</h3>
+        <p class="para">The Permanent Account Number (PAN) Card is an important document that serves as an identification tool for many more purposes like tax payment, verification medium in banks, companies and in other government services in India. However, with the increasing demand for PAN Cards, fraudulent activities involving fake PAN Cards have also increased. For this project we will calculate the structural similarity of the original PAN card and the PAN card uploaded by the user. This is the soul of this project. Similarly in this project with the help of image processing involving the techniques of computer vision we are going to detect that whether the given image of the PAN card is original or tampered (fake) PAN card.</p>
+        <h3 class="heading">01.INTRODUCTION</h3>
+        <p class="para">The Permanent Account Number (PAN) Card is a very important document for taxpayers in India, as it provides a unique identification number for various financial transactions. However, the increasing demand for PAN Cards has led to an increase in fraudulent activities involving fake PAN Cards, which can be used for tax fraud and other financial crimes. As such, it is essential to have a system in place to detect fake and real PAN Cards. For this project we will calculate the structural similarity of the original PAN card and the PAN card uploaded by the user. This is the soul of this project. Similarly in this project with the help of image processing involving the techniques of computer vision we are going to detect that whether the given image of the PAN card is original or tampered (fake) PAN card.The PAN card is a vital identification document issued by the Income Tax Department of India and is primarily used for tax-related purposes. It contains important personal and financial information, including the individual's name, date of birth, photograph, and a unique alphanumeric PAN number.The act of tampering with a PAN card can involve various forms of forgery, alteration, or unauthorized changes to the card's details. Pan card tampering is illegal and unethical, and those who engage in such activities may face severe legal consequences.</p>
+        <h3 class="heading">1.1MOTIVATION:</h3>
+        <h4>1.1.1 OVERVIEW OF EXISTING SYSTEM:</h4><br/>
+        <p class="para2">Detecting tampered PAN card by extracting Permanent Account Number from User uploaded image and checking with official department. Highly Time consuming processes , Limited to larger organizations only.
+            Detecting tampered PAN card using computer vision by only checking Structural Similarity between them of original PAN card and the PAN card uploaded by user. Finely tampered Image cannot give accurate output as Structural Similarity will be high.</p>
+        <h4>Drawbacks of existing system:</h4><br/>
+        <p class="para2">• Limited Coverage<br/>
+            • Maintenance and Updates<br/>
+            • Regulatory Compliance<br/>
+            • Accuracy and Reliability<br/>
+            • False Positives and Negatives<br/>
+            • Data Privacy Concerns
+            </p>
+        <h4>1.1.2 OVERVIEW OF PROPOSED SYSTEM:</h4><br/>
+        <p class="para2">Nowadays frauds are everywhere. From cyber technology to legal documents, everywhere is fraud. So here, we’re going to build a pan card tampering detection project using Computer Vision with OpenCV – Python, SSIM(Structural Similarity Index) and Computer vision .This will make organizations easy to find that the id(Pan card) provided by the employees are original or fake.</p>
+        <h4>Advantages of proposed system:</h4><br/>
+        <p class="para2">• The system helps in detecting fake or tampered PAN cards, preventing identity theft and fraudulent 
+            transactions.<br/>
+            • It automates the verification process, making it faster and more efficient than manual verification.<br/>
+            • The system can scale to handle a large number of verification requests efficiently.<br/>
+            • Automation reduces the time it takes to verify PAN cards, improving operational efficiency.
+        </p>
+        <h4>1.1.3 SYSTEM FEATURES:</h4><br/>
+        <p class="para2">• The ability to verify the authenticity and validity of PAN cards provided by users.<br/>
+            • Secure methods for user authentication to ensure authorized access to the system.<br/>
+            • Tools for managing user accounts, permissions, and access control
+        </p>
+        <h3 class="heading">1.2 PROBLEM DEFINITION:</h3>
+        <p class="para">The problem is to develop an automated system that can accurately and efficiently detect tampering or alterations in PAN (Permanent Account Number) cards, a critical identification document issued by the Indian government and used for various financial and official transactions..</p>
+        <h3 class="heading">1.3 OBJECTIVE OF PROJECT:</h3>
+        <p class="para">The objective of the PAN card tampering detection project is to create an accurate, automated, and secure system for verifying PAN cards. It aims to detect tampering, ensure data accuracy, provide real-time verification (if needed), scale efficiently, integrate with external services, allow customization, comply with regulations, offer a user-friendly experience, maintain an audit trail, continuously improve, ensure usability and accessibility, be cost-effective, provide user education and support, and deploy and maintain the system reliably. The project seeks to enhance identity verification, reduce fraud, and build user trust.</p>
+        <h3 class="heading">1.4 SCOPE OF PROJECT:</h3>
+        <p class="para">The project's scope includes developing an accurate and secure PAN card verification system. It covers tampering detection, automation, accuracy, security, real-time verification (optional), scalability, integration, customization, regulatory compliance, user experience, audit trail, continuous improvement, usability, cost-effectiveness, user education and support, and reliable deployment and maintenance. The project aims to enhance identity verification, reduce fraud, and ensure a seamless user experience.</p><br/>
+        <h1 class="main">02.SYSTEM ANALYSIS</h1>
+        <h3 class="heading">2.1 SYSTEM ARCHITECTURE:</h3>
+        <h4>2.1.1 ARCHITECTURE DIAGRAM</h4>
+        <img src="archi.png" alt="error" class="archi">
+        <h4 class="diagram">Fig 2.1.1:Architecture Diagram</h4><br/><br/><br/><br/><br/><br/><br/><br/>
+        <p class="para">Implementing a PAN card tampering detection system involves several technical components and steps. Below, I'll provide a high-level explanation of the key aspects of implementation.Begin by understanding the specific requirements of the system, including the desired features, user needs, and regulatory compliance. Choose the appropriate technologies and tools for different system components, including web development frameworks, databases, and machine learning libraries. Create a user-friendly web or mobile interface where users can upload PAN card images for verification. Design the UI to guide users through the verification process, provide feedback, and handle error cases gracefully. Implement user authentication and authorization mechanisms to ensure secure access to the system. Develop user management features, allowing users to create accounts, reset passwords, and manage their profiles. Develop image processing algorithms to preprocess PAN card images, such as re-sizing and format Top of Form conversion. Implement image analysis algorithms, including computer vision and machine learning models, to detect tampering or alterations.Pan card tampering detection using Structural Similarity Index (SSIM) is a technique employed to identify alterations or tampering in Permanent Account Number (PAN) cards by comparing the similarity between the original and scanned/taken PAN card images. The SSIM method is a popular image processing and computer vision technique used for image quality assessment and comparison.</p>
+        <h4>The steps involved in this project are as follows :</h4><br/>
+        <p class="para2">1. Import necessary libraries<br/>
+            2. Scraping the tampered and original pan card from the website<br/>
+            3. Scaling down the shape of the tampered image as the original image<br/>
+            4. Read original and tampered image<br/>
+            5. Converting an image into a grayscale image<br/>
+            6. Applying Structural Similarity Index (SSIM) technique between the two images<br/>
+            7. Calculate Threshold and contours and<br/>
+            8. Experience real-time contours and threshold on images
+        </p>
+        <h4>Importing the necessary packages:</h4><br/>
+        <p class="para2">from skimage.metrics import structural_similarity<br/>
+            import imutils<br/>
+            import cv2<br/>
+            from PIL import Image<br/>
+            import requests
+        </p>
+        <h3 class="heading">2.2 OPERATING REQUIREMENTS</h3>
+        <h4>HARDWARE REQUIREMENTS:</h4><br/>
+        <p class="para2">• Processor : Any processor above 500MHz<br/>
+            • Input Device: Standard Keyboard and Mouse<br/>
+            • Output Device : VGA and High Resolution Monitor<br/>
+            • Ram : 4 GB <br/>
+            • Hard Disk : 256 GB
+        </p>
+        <h4>SOFTWARE REQUIREMENTS:</h4><br/>
+        <p class="para2">• Operating system : Windows<br/>
+            • Coding Language : Python
+        </p>
+        <h1 class="main">03.OUTPUT SCREENS</h1>
+        <img src="pancard.png" alt="error" class="home">
+        <h4 class="diagram2">Fig 3.1 Home Screen</h4>
+        <img src="upload.png" alt="error" class="upload">
+        <h4 class="diagram3">Fig 3.2 Image Uploading</h4>
+        <img src="output.png" alt="error" class="output">
+        <h4 class="diagram4">Fig 3.3 Image is uploaded and it is real</h4><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <h1 class="main">CONCLUSION</h1>
+        <p class="para">This project can be used in different organizations where customers or users need to provide any kind of id in order to get themselves verified. The organization can use this project to find out whether the ID is original or fake. Similarly, this can be used for any type of ID like Aadhar, voter id, etc..In conclusion, the development and implementation of a Pan Card Tampering Detection system represent a significant stride towards safeguarding the integrity of Permanent Account Number (PAN) cards and the vital information they hold. This innovative system leverages advanced technologies, including image processing and the Structural Similarity Index (SSIM), to provide a robust and efficient solution for detecting alterations and tampering attempts in PAN cards.</p><br/>
+        <h1 class="main">FUTURE ENHANCEMENTS</h1>
+        <p class="para">Further enhancements can be providing the new futures of the pan card so that a peoples can find the card is real or fake through it and also converting our application into a mobile app. This makes it even much better and easier to access from anyplace and anytime. Also some extra features can be added such as credit/debit card detection, fake id detection etc.<br/>
+            Certainly, here are potential future enhancements for the Pan Card Tampering Detection Project using SSIM:<br/>
+            In the future, the project can be extended to offer real-time PAN card verification, allowing users to capture PAN card images using their device's camera for immediate analysis. This real-time capability can be particularly valuable for online identity verification services and applications where quick and accurate authentication is essential.
+        </p>
+        <h4 class="sign">-GOPICHAND RAVURI</h4>
+        <a class="pdf" href="Team-06 final report 49pgs without borders edited.pdf">Download DOC</a>
+    </body>
+</html>
