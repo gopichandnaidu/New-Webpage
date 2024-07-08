@@ -8,6 +8,32 @@
         opacity: 1;
     }
 }
+@keyframes slideInLeft {
+
+    from{
+        transform:translateY(60px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideInRight {
+
+    from{
+        transform:translateY(2px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 html{
     scroll-behavior: smooth;
 }
@@ -57,8 +83,8 @@ a.bt1{
     transition-duration: 0.4s;
 }
 a.bt1:hover{
-    background-color: gray;
-    color: rgb(0, 0, 0);
+    background-color: rgba(16, 16, 16, 0.928);
+    color: rgb(255, 255, 255);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     font-size: large;
@@ -71,7 +97,7 @@ a.bt1:hover{
     left: 12%;
     animation: slideUp 2s ease;
 }
-img{
+img.profile{
     height: 260px;
     width: 250px;
     position: absolute;
@@ -87,7 +113,7 @@ img{
     color: rgb(132, 0, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-img:hover{
+img.profile:hover{
     cursor: pointer;
     box-shadow: 10px 10px 5px  rgba(154, 40, 248, 0.5);
     filter: grayscale(0%);
@@ -128,12 +154,44 @@ h2{
     color: rgba(57, 57, 57, 0.801);
     animation: slideUp 2s ease;
 }
-.contact{
-    animation: slideUp 2s ease-in;
+.contact h2{
+    animation: slideUp 2s ease;
+    margin-top: 10%;
+    margin-left: 1%;
 }
 #section1{
     animation: slideUp 2s ease;
 }
+.fa {
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    float: left;
+    margin-left: 4%;
+    margin-top: 3%;
+    
+  }
+  .fa-linkedin {
+    /*background: #007bb5;*/
+    color: #007bb5;
+    margin-left: 33%;
+    animation: slideInLeft 3s ease;
+  }
+  .fa-facebook {
+    /*background: #3B5998;*/
+    color: #3B5998;
+    animation: slideInLeft 2s ease;
+  }
+  .fa-instagram {
+    /*background: #125688;*/
+    color: rgb(255, 0, 43);
+    animation: slideInRight 2s ease;
+  }
+
 .thanks h2{
     position: absolute;
     top: 90%;
@@ -145,4 +203,44 @@ h2{
     font-weight: bolder;
     color: rgb(132, 0, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img.x{
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    width: 40px;
+    height: 27px;
+    float: left;
+    margin-left: 4%;
+    margin-top: 3.1%;
+    animation: slideInRight 3s ease;
+}
+button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    opacity: 50%;
+    color: white;
+    left: 42.7%;
+    margin-top:5%;
+    font-weight: bold;
+    transition: 1s;
+    border: none;
+    animation: slideUp 2s ease;
+
+}
+button:hover{
+    opacity: 100%;
+    box-shadow: 0px 0px 15px blueviolet;
+}
+i{
+    font-weight: bold;
+}
+.abbtn{
+    text-decoration: none;
+    color: white;
 }
