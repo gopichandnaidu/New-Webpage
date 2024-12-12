@@ -97,7 +97,7 @@ a.bt1:hover{
     left: 12%;
     animation: slideUp 2s ease;
 }
-img.profile{
+img{
     height: 260px;
     width: 250px;
     position: absolute;
@@ -113,7 +113,7 @@ img.profile{
     color: rgb(132, 0, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-img.profile:hover{
+img:hover{
     cursor: pointer;
     box-shadow: 10px 10px 5px  rgba(154, 40, 248, 0.5);
     filter: grayscale(0%);
